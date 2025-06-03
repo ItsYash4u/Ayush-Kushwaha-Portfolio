@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export const Hero = () => {
@@ -48,30 +47,33 @@ export const Hero = () => {
         ></div>
       </div>
 
+      {/* Profile picture moved to top-left corner */}
+      <div 
+        className="absolute top-8 left-8 z-20"
+        style={{ transform: `translateY(${scrollY * 0.1}px)` }}
+      >
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full p-1 animate-pulse">
+            <div className="bg-slate-900 rounded-full p-1">
+              <img
+                src="https://i.ibb.co/KxJZGVK/photo-1472099645785-5658abf4ff4e-ixlib-rb-1-2.jpg"
+                alt="Ayush Kushwaha"
+                className="w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover shadow-2xl"
+              />
+            </div>
+          </div>
+          {/* Floating elements around profile */}
+          <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full animate-bounce"></div>
+          <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 -left-6 w-2 h-2 bg-pink-400 rounded-full animate-ping"></div>
+        </div>
+      </div>
+
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div 
           className="animate-fade-in"
           style={{ transform: `translateY(${scrollY * 0.1}px)` }}
         >
-          <div className="mb-12 relative">
-            {/* Profile picture with enhanced styling */}
-            <div className="relative inline-block">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full p-1 animate-pulse">
-                <div className="bg-slate-900 rounded-full p-1">
-                  <img
-                    src="https://i.ibb.co/KxJZGVK/photo-1472099645785-5658abf4ff4e-ixlib-rb-1-2.jpg"
-                    alt="Ayush Kushwaha"
-                    className="w-40 h-40 rounded-full object-cover shadow-2xl"
-                  />
-                </div>
-              </div>
-              {/* Floating elements around profile */}
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-400 rounded-full animate-bounce"></div>
-              <div className="absolute -bottom-2 -left-2 w-4 h-4 bg-purple-400 rounded-full animate-pulse"></div>
-              <div className="absolute top-1/2 -left-8 w-3 h-3 bg-pink-400 rounded-full animate-ping"></div>
-            </div>
-          </div>
-          
           <div 
             style={{ transform: `translateY(${scrollY * 0.05}px)` }}
           >
@@ -113,7 +115,7 @@ export const Hero = () => {
             >
               <a href="#portfolio" className="flex items-center gap-2">
                 View My Work
-                <ArrowDown className="w-5 h-5" />
+                
               </a>
             </Button>
             <Button 
@@ -141,15 +143,6 @@ export const Hero = () => {
                className="text-gray-400 hover:text-pink-400 transition-all duration-300 transform hover:scale-125 hover:shadow-lg p-3 rounded-full backdrop-blur-sm border border-white/10 hover:border-pink-400/50">
               <Instagram className="h-8 w-8" />
             </a>
-          </div>
-        </div>
-        
-        <div 
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
-          style={{ transform: `translateX(-50%) translateY(${scrollY * -0.1}px)` }}
-        >
-          <div className="bg-white/10 backdrop-blur-sm rounded-full p-4 border border-white/20">
-            <ArrowDown className="h-6 w-6 text-gray-300" />
           </div>
         </div>
       </div>
