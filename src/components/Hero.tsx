@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -20,7 +20,7 @@ export const Hero = () => {
             <img
               src="/lovable-uploads/2888cc8a-3f53-4059-aade-272e0c595415.png"
               alt="Ayush Kushwaha"
-              className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-blue-400 shadow-2xl object-cover"
+              className="w-32 h-32 mx-auto mb-6 shadow-2xl object-cover"
             />
           </div>
           
@@ -75,10 +75,6 @@ export const Hero = () => {
               <Instagram className="h-8 w-8" />
             </a>
           </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="h-6 w-6 text-gray-400" />
         </div>
       </div>
     </section>
