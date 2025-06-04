@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Instagram } from "lucide-react";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
@@ -15,16 +16,17 @@ export const Hero = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <div className="animate-fade-in">
-          <div className="mb-8">
-            <img
-              src="/lovable-uploads/2888cc8a-3f53-4059-aade-272e0c595415.png"
-              alt="Ayush Kushwaha"
-              className="w-32 h-32 mx-auto mb-6 shadow-2xl object-cover"
-            />
-          </div>
-          
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <motion.h1 
+            className="text-4xl sm:text-6xl lg:text-7xl font-bold mb-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <span className="block text-white">Hi, I'm</span>
             <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Ayush Kushwaha
@@ -32,20 +34,35 @@ export const Hero = () => {
             <span className="block text-2xl sm:text-3xl lg:text-4xl text-gray-300 mt-2">
               (Yash)
             </span>
-          </h1>
+          </motion.h1>
           
-          <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <motion.p 
+            className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             CFO at <span className="text-blue-400 font-semibold">Code Caffeine</span> | 
             BSc Data Science & AI at <span className="text-purple-400 font-semibold">IIT Guwahati</span> | 
             Class of 2027
-          </p>
+          </motion.p>
           
-          <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+          <motion.p 
+            className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
             Passionate about technology, AI, finance-tech integration, and web development. 
             Making 2025 a transformative year through growth in AI and tech innovation.
-          </p>
+          </motion.p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+          >
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
@@ -59,9 +76,14 @@ export const Hero = () => {
             >
               <a href="#contact">Get In Touch</a>
             </Button>
-          </div>
+          </motion.div>
           
-          <div className="flex justify-center space-x-6 mb-10">
+          <motion.div 
+            className="flex justify-center space-x-6 mb-10"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+          >
             <a href="https://linkedin.com/in/ayush-kushwaha" target="_blank" rel="noopener noreferrer" 
                className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Linkedin className="h-8 w-8" />
@@ -74,8 +96,8 @@ export const Hero = () => {
                className="text-gray-400 hover:text-pink-400 transition-colors duration-300 transform hover:scale-110">
               <Instagram className="h-8 w-8" />
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
