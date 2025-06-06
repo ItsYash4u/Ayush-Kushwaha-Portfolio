@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -138,8 +139,10 @@ export const Portfolio = () => {
                   
                   <div className="flex gap-3 pt-4">
                     <Button variant="outline" size="sm" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white flex-1">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Details
+                      <a href="https://github.com/ItsYash4u" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        Details
+                      </a>
                     </Button>
                   </div>
                 </CardContent>

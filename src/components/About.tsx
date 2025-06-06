@@ -67,12 +67,14 @@ export const About = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white">
-                <a href="https://linkedin.com/in/ayush-kushwaha" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/itsyash4u/" target="_blank" rel="noopener noreferrer">
                   LinkedIn Profile
                 </a>
               </Button>
               <Button variant="outline" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white">
-                Download CV
+                <a href="https://pdf.ac/1NwJbG" target="_blank" rel="noopener noreferrer">
+                  Download CV
+                </a>
               </Button>
             </div>
           </motion.div>
