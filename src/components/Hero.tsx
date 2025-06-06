@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
@@ -84,15 +83,15 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
           >
-            <a href="https://linkedin.com/in/ayush-kushwaha" target="_blank" rel="noopener noreferrer" 
+            <a href="https://www.linkedin.com/in/itsyash4u/" target="_blank" rel="noopener noreferrer" 
                className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Linkedin className="h-8 w-8" />
             </a>
-            <a href="https://github.com/ayush-kushwaha" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/ItsYash4u" target="_blank" rel="noopener noreferrer"
                className="text-gray-400 hover:text-purple-400 transition-colors duration-300 transform hover:scale-110">
               <Github className="h-8 w-8" />
             </a>
-            <a href="https://instagram.com/ayush_kushwaha" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/yash.kushwaha03" target="_blank" rel="noopener noreferrer"
                className="text-gray-400 hover:text-pink-400 transition-colors duration-300 transform hover:scale-110">
               <Instagram className="h-8 w-8" />
             </a>

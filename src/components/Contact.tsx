@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -89,19 +88,19 @@ export const Contact = () => {
     {
       icon: <Linkedin className="h-8 w-8" />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/ayush-kushwaha",
+      url: "https://www.linkedin.com/in/itsyash4u/",
       color: "hover:text-blue-400"
     },
     {
       icon: <Github className="h-8 w-8" />,
       name: "GitHub",
-      url: "https://github.com/ayush-kushwaha",
+      url: "https://github.com/ItsYash4u",
       color: "hover:text-purple-400"
     },
     {
       icon: <Instagram className="h-8 w-8" />,
       name: "Instagram",
-      url: "https://instagram.com/ayush_kushwaha",
+      url: "https://www.instagram.com/yash.kushwaha03",
       color: "hover:text-pink-400"
     }
   ];
