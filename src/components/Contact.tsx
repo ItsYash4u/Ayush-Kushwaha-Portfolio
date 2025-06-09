@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -62,26 +61,26 @@ export const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-blue-400" />,
       title: "Primary Email",
-      detail: "ayush.kushwaha@example.com",
-      link: "mailto:ayush.kushwaha@example.com"
+      detail: "yashsinghkushwaha345@gmail.com",
+      link: "mailto:yashsinghkushwaha345@gmail.com"
     },
     {
       icon: <Mail className="h-6 w-6 text-purple-400" />,
       title: "Alternate Email",
-      detail: "yash.contact@example.com",
-      link: "mailto:yash.contact@example.com"
+      detail: "ayushsinghkushwha345@gmail.com",
+      link: "mailto:ayushsinghkushwha345@gmail.com"
     },
     {
       icon: <MapPin className="h-6 w-6 text-green-400" />,
       title: "Location",
-      detail: "IIT Guwahati, Assam",
+      detail: "Kanpur, UP",
       link: null
     },
     {
       icon: <Phone className="h-6 w-6 text-yellow-400" />,
-      title: "Availability",
-      detail: "Open for opportunities",
-      link: null
+      title: "Call",
+      detail: "+91 8318861649",
+      link: "tel:+918318861649"
     }
   ];
 

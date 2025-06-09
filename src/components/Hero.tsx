@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Instagram } from "lucide-react";
 import { motion } from "framer-motion";
@@ -42,9 +41,8 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            CFO at <span className="text-blue-400 font-semibold">Code Caffeine</span> | 
-            BSc Data Science & AI at <span className="text-purple-400 font-semibold">IIT Guwahati</span> | 
-            Class of 2027
+            An AI innovator, Data Science enthusiast, and CFO at <span className="text-blue-400 font-semibold">Code Caffeine</span>, 
+            building the future at the intersection of tech, finance, and growth.
           </motion.p>
           
           <motion.p 
