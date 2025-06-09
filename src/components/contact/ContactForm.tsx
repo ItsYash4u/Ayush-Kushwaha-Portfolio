@@ -74,7 +74,7 @@ export const ContactForm = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <Card className="bg-purple-card border-purple-soft">
+      <Card className="bg-card border-border">
         <CardHeader>
           <CardTitle className="text-2xl text-foreground">Send a Message</CardTitle>
         </CardHeader>
@@ -92,7 +92,7 @@ export const ContactForm = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-purple-primary focus:ring-purple-primary"
+                  className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-primary focus:ring-primary"
                   placeholder="Your full name"
                 />
               </div>
@@ -107,7 +107,7 @@ export const ContactForm = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-purple-primary focus:ring-purple-primary"
+                  className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-primary focus:ring-primary"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -124,7 +124,7 @@ export const ContactForm = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-purple-primary focus:ring-purple-primary"
+                className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-primary focus:ring-primary"
                 placeholder="What's this about?"
               />
             </div>
@@ -140,7 +140,7 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-purple-primary focus:ring-purple-primary resize-none"
+                className="bg-secondary/50 border-border text-foreground placeholder-muted-foreground focus:border-primary focus:ring-primary resize-none"
                 placeholder="Tell me about your project, question, or just say hello!"
               />
             </div>
@@ -148,7 +148,7 @@ export const ContactForm = () => {
             <Button 
               type="submit" 
               disabled={isLoading}
-              className="w-full bg-gradient-to-r from-purple-600 to-violet-600 hover:from-purple-700 hover:to-violet-700 text-white py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isLoading ? (
                 <>

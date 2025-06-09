@@ -6,25 +6,25 @@ import { motion } from "framer-motion";
 export const ContactInfo = () => {
   const contactInfo = [
     {
-      icon: <Mail className="h-6 w-6 text-purple-primary" />,
+      icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Primary Email",
       detail: "ayush.kushwaha@iitg.ac.in",
       link: "mailto:ayush.kushwaha@iitg.ac.in"
     },
     {
-      icon: <Mail className="h-6 w-6 text-purple-secondary" />,
-      title: "Alternate Email",
-      detail: "yash.contact@codecaffeine.tech",
-      link: "mailto:yash.contact@codecaffeine.tech"
+      icon: <Mail className="h-6 w-6 text-accent" />,
+      title: "Personal Email",
+      detail: "ayushkushwaha2005@gmail.com",
+      link: "mailto:ayushkushwaha2005@gmail.com"
     },
     {
-      icon: <MapPin className="h-6 w-6 text-purple-accent" />,
+      icon: <MapPin className="h-6 w-6 text-secondary" />,
       title: "Location",
       detail: "IIT Guwahati, Assam",
       link: null
     },
     {
-      icon: <Phone className="h-6 w-6 text-purple-primary" />,
+      icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Availability",
       detail: "Open for opportunities",
       link: null
@@ -47,7 +47,7 @@ export const ContactInfo = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <Card className="bg-purple-card border-purple-soft">
+      <Card className="bg-card border-border">
         <CardHeader>
           <CardTitle className="text-2xl text-foreground">Contact Information</CardTitle>
         </CardHeader>
@@ -60,7 +60,7 @@ export const ContactInfo = () => {
               <div>
                 <h3 className="font-semibold text-foreground">{info.title}</h3>
                 {info.link ? (
-                  <a href={info.link} className="text-muted-foreground hover:text-purple-primary transition-colors duration-300">
+                  <a href={info.link} className="text-muted-foreground hover:text-primary transition-colors duration-300">
                     {info.detail}
                   </a>
                 ) : (

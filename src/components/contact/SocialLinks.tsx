@@ -9,19 +9,19 @@ export const SocialLinks = () => {
       icon: <Linkedin className="h-8 w-8" />,
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/itsyash4u/",
-      color: "hover:text-purple-primary"
+      color: "hover:text-primary"
     },
     {
       icon: <Github className="h-8 w-8" />,
       name: "GitHub",
       url: "https://github.com/ItsYash4u",
-      color: "hover:text-purple-secondary"
+      color: "hover:text-accent"
     },
     {
       icon: <Instagram className="h-8 w-8" />,
       name: "Instagram",
       url: "https://www.instagram.com/yash.kushwaha03",
-      color: "hover:text-purple-accent"
+      color: "hover:text-secondary"
     }
   ];
 
@@ -41,7 +41,7 @@ export const SocialLinks = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <Card className="bg-purple-card border-purple-soft">
+      <Card className="bg-card border-border">
         <CardHeader>
           <CardTitle className="text-2xl text-foreground">Follow Me</CardTitle>
         </CardHeader>

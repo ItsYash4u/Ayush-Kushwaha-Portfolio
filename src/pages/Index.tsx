@@ -9,7 +9,7 @@ import { Copyright } from "../components/Copyright";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-purple-gradient text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       <Hero />
       <About />

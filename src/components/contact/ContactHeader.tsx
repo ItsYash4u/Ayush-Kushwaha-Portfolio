@@ -19,14 +19,14 @@ export const ContactHeader = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={fadeInVariants}
     >
-      <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
         Get In Touch
       </h2>
       <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
         I'm always open to discussing new opportunities, collaborations, or just having a conversation about technology and innovation. 
         Let's connect!
       </p>
-      <div className="w-24 h-1 bg-gradient-to-r from-purple-400 to-violet-400 mx-auto mt-6"></div>
+      <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6"></div>
     </motion.div>
   );
 };
