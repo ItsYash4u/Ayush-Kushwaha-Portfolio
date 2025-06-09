@@ -139,10 +139,8 @@ export const Portfolio = () => {
                   
                   <div className="flex gap-3 pt-4">
                     <Button variant="outline" size="sm" className="border-purple-400 text-purple-400 hover:bg-purple-400 hover:text-white flex-1">
-                      <a href="https://github.com/ItsYash4u" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                        <ExternalLink className="h-4 w-4" />
-                        Details
-                      </a>
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Details
                     </Button>
                   </div>
                 </CardContent>
@@ -159,7 +157,7 @@ export const Portfolio = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
-            <a href="https://github.com/ItsYash4u" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+            <a href="https://github.com/ayush-kushwaha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
               <Github className="h-5 w-5" />
               View All Projects on GitHub
             </a>
